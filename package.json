@@ -1,0 +1,46 @@
+{
+  "name": "@zuoyong/fund",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./bin/lib.js",
+  "bin": {
+    "fund": "./bin/lib.js"
+  },
+  "type": "commonjs",
+  "scripts": {
+    "start": "rm -rf lib && npm run remove && tsc --watch",
+    "remove": "npm uninstall -g @zuoyong/fund && npm link"
+  },
+  "files": [
+    "bin/*",
+    "lib/*"
+  ],
+  "keywords": [],
+  "author": "zuoyong",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/babel__traverse": "^7.18.3",
+    "@types/crypto-js": "^4.1.1",
+    "@types/fs-extra": "^11.0.1",
+    "@types/humps": "^2.0.2",
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.13.0"
+  },
+  "dependencies": {
+    "@babel/parser": "^7.20.15",
+    "@babel/traverse": "^7.20.13",
+    "@babel/types": "^7.20.7",
+    "@volcengine/openapi": "^1.9.1",
+    "axios": "^0.26.1",
+    "chalk": "^4.1.1",
+    "commander": "^9.2.0",
+    "crypto-js": "^4.1.1",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.2",
+    "fs-extra": "^10.1.0",
+    "humps": "^2.0.1",
+    "inquirer": "^8.2.2",
+    "node-xlsx": "^0.23.0",
+    "ora": "^5.4.1"
+  }
+}
